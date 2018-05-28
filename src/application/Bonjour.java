@@ -5,7 +5,7 @@ public class Bonjour {
 	{
 		for (String pers : arg)
 		{
-			System.out.println("Bonjour " + pers + ".");
+			System.out.println("Bonjour " + pers + " !");
 		}
 	}
 }
