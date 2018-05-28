@@ -1,20 +1,12 @@
 package application;
 
-import domaine.Personne;
+import domaine.Groupe;
 
 public class Bonjour {
 	public static void main(String arg[])
 	{
-		Personne personne[];
-		personne = new Personne[arg.length];
-		for (int i = 0; i < arg.length; i++)
-		{
-			personne[i] = new Personne(arg[i]);
-		}
-		
-		for (Personne p : personne)
-		{
-			System.out.println(p.salut());
-		}
+		Groupe grp = new Groupe(arg);
+		System.out.println("Salut au groupe " + grp + "...");
+		grp.saluer();
 	}
 }
